@@ -1,0 +1,253 @@
+
+/*------------------------
+---------IMG/ICON---------
+------------------------*/
+
+.contain {
+  background-size: contain;
+}
+
+.cover {
+  background-size: cover;
+}
+
+.nrc {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+}
+
+.iconSB {
+  margin: 4em 1.5em;
+}
+
+.fb {
+  background-image: url("../img/fb.png");
+}
+
+.tw {
+  background-image: url("../img/tw.png");
+}
+
+.ig {
+  background-image: url("../img/ig.png");
+}
+
+/*------------------------
+-------SITE-ELEMENTS------
+------------------------*/
+
+body {
+  font-size: 1em;
+  height: 100%;
+  line-height: 1.618em;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 4.326em;
+}
+
+h2 {
+  font-size: 2.618em;
+}
+
+h3 {
+  font-size: 1.618em;
+}
+
+
+/*------------------------
+-------FONTS--------------
+------------------------*/
+
+.font1 {
+  font-size: 4.236em;
+}
+
+.font2 {
+  font-size: 2.618em;
+}
+
+.font3 {
+  font-size: 1.618em;
+}
+
+.font4 {
+  font-size: 1em;
+}
+
+.font5 {
+  font-size: .75em;
+}
+
+.font6 {
+  font-size: .5em;
+}
+
+.fontHead {
+  font-family: $header;
+}
+
+.fontBody {
+  font-family: $body;
+}
+
+.fontWhite {
+  color: $white;
+}
+
+.fontBlack {
+  color: $black;
+}
+
+.fontDkBlue {
+  color: $dkBlue;
+}
+
+.fontLtBlue {
+  color: $ltBlue;
+}
+
+.fontUpper {
+  text-transform: uppercase;
+}
+
+.fontLower {
+  text-transform: lowercase;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.light {
+  font-weight: lighter;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.textBreak {
+  margin-bottom: 1.618em;
+}
+
+/*------------------------
+------------BG-----------
+------------------------*/
+
+.bgWhite {
+  background: $white;
+}
+
+.bgBlack {
+  background: $black;
+}
+
+.bgDkBlue {
+  background: $dkBlue;
+}
+
+.bgLtBlue {
+  background: $ltBlue;
+}
+
+.bgLtBlack {
+  background: $ltBlack;
+}
+
+/*------------------------
+---------OPACITY----------
+------------------------*/
+
+.op9 {
+  opacity: .9;
+}
+
+.op8 {
+  opacity: .8;
+}
+
+.op7 {
+  opacity: .7;
+}
+
+.op6 {
+  opacity: .6;
+}
+
+.op5 {
+  opacity: .5;
+}
+
+.op4 {
+  opacity: .4;
+}
+
+.op3 {
+  opacity: .3;
+}
+
+.op2 {
+  opacity: .2;
+}
+
+.op1 {
+  opacity: .1;
+}
+
+.op0 {
+  opacity: 0;
+}
+
+/*------------------------
+--------ANIMATIONS--------
+------------------------*/
+
+.transition3 {
+  transition: .3s;
+}
+
+.transition6 {
+  transition: .6s;
+}
+
+.transition9 {
+  transition: .9s;
+}
+
+@keyframes bgZoom {
+  0% {background-size: 20vw 20vw;}
+  50% {background-size: 25vw 25vw;}
+  100% {background-size: 20vw 20vw;}
+}
+
+@keyframes cloud {
+  0% {left: 0;}
+  100% {left: 100vw;}
+}
+
+@keyframes carTest {
+  0% {right: -5vw;}
+  8% {right: 30vw;}
+  100% {right: 105vw;}
+}
