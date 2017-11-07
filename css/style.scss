@@ -4,60 +4,51 @@
 @import 'content.scss';
 @import 'structure.scss';
 
+.hero {
+  height: 100vh;
+  width: 100vw;
+}
+
+
 .imgMain {
   background-image: url("../img/imgMain.png");
-  background-position: 50% 50%;
-  box-shadow: 0px 0px 10px 10px rgba(10,10,10,.2);
-  height: 80vh;
-  width: 80vw;
-}
-
-.title {
-  top: calc(10vh - .5em);
-}
-
-.leftIcons, .rightIcons {
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
   height: 100%;
-  width: 10vw;
+  width: 100%;
 }
 
-.deco {
-  height: 3vw;
-  width: 3vw;
-}
-
-.wheel {
-  background-image: url("../img/wheel.svg");
-}
-
-.beer {
-  background-image: url("../img/beer.svg");
-}
-
-.icon {
-  height: 3vw;
-  width: 3vw;
-}
-
-.tw {
-  background-image: url("../img/tw.png");
+.socIcon {
+  height: 30px;
+  width: 30px;
 }
 
 .fb {
   background-image: url("../img/fb.png");
 }
 
+.tw {
+  background-image: url("../img/tw.png");
+}
+
 .sc {
   background-image: url("../img/sc.png");
 }
 
-.tracks {
-  flex-wrap: wrap;
+.music {
+  text-align: center;
+
+    &::after {
+      background: url("../img/wheel.png") no-repeat center;
+      background-size: contain;
+      content: "";
+      display: block;
+      height: 30px;
+      margin: 30px auto;
+      width: 30px;
+    }
 }
 
-.trackDiv iframe {
-  min-width: 250px;
+iframe {
+  border: 1px solid $dkBlue;
+  max-width: calc(400px + 4em);
+  height: 400px;
 }
