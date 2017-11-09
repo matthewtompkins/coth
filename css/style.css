@@ -432,15 +432,35 @@ h3 {
 .hero {
   height: 100vh;
   width: 100vw; }
+  @media only screen and (max-width: 768px) {
+    .hero {
+      height: 600px; } }
 
 .imgMain {
   background-image: url("../img/imgMain.png");
   height: 100%;
   width: 100%; }
 
+@media only screen and (max-width: 768px) {
+  .title {
+    padding: 1em;
+    text-align: center;
+    width: 100%; } }
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%; } }
+
 .socIcon {
   height: 30px;
   width: 30px; }
+  @media only screen and (max-width: 768px) {
+    .socIcon {
+      display: inline-block;
+      margin: 1em; } }
 
 .fb {
   background-image: url("../img/fb.png"); }
@@ -453,6 +473,9 @@ h3 {
 
 .tracks {
   background-image: url("../img/wood.jpg"); }
+  @media only screen and (max-width: 768px) {
+    .tracks {
+      padding: 0; } }
 
 .music {
   padding-bottom: 0;
@@ -466,15 +489,28 @@ h3 {
     margin: 30px auto 40px;
     width: 30px; }
 
+.scPlayer {
+  margin-bottom: 4em;
+  margin-top: 4em; }
+  @media only screen and (max-width: 768px) {
+    .scPlayer {
+      margin: 0; } }
+
 iframe {
   border: 1px solid #6581A6;
-  max-width: calc(400px + 4em);
-  height: 400px; }
+  height: 400px;
+  max-width: calc(400px + 4em); }
+  @media only screen and (max-width: 768px) {
+    iframe {
+      max-width: 100%;
+      width: 100%; } }
 
 .contactDiv {
   background: #141416;
   box-shadow: 0 0 10px rgba(10, 10, 10, 0.4);
   font-family: "Rozha One", sans-serif;
+  margin-bottom: 4em;
+  margin-top: 4em;
   max-width: 100%;
   min-width: 400px;
   padding: 2.618em;
