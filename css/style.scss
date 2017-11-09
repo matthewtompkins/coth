@@ -5,6 +5,7 @@
 @import 'structure.scss';
 
 .hero {
+  background-color: $black;
   height: 100vh;
   width: 100vw;
 
@@ -18,6 +19,11 @@
   background-image: url("../img/imgMain.png");
   height: 100%;
   width: 100%;
+
+    @include responsive(small-screen) {
+      background-image: url("../img/imgMainMobile.png");
+      background-size: contain;
+    }
 }
 
 .title {

@@ -430,6 +430,7 @@ h3 {
   overflow: scroll; }
 
 .hero {
+  background-color: #141416;
   height: 100vh;
   width: 100vw; }
   @media only screen and (max-width: 768px) {
@@ -440,6 +441,10 @@ h3 {
   background-image: url("../img/imgMain.png");
   height: 100%;
   width: 100%; }
+  @media only screen and (max-width: 768px) {
+    .imgMain {
+      background-image: url("../img/imgMainMobile.png");
+      background-size: contain; } }
 
 @media only screen and (max-width: 768px) {
   .title {
