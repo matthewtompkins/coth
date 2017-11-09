@@ -451,7 +451,11 @@ h3 {
 .sc {
   background-image: url("../img/sc.png"); }
 
+.tracks {
+  background-image: url("../img/wood.jpg"); }
+
 .music {
+  padding-bottom: 0;
   text-align: center; }
   .music::after {
     background: url("../img/wheel.png") no-repeat center;
@@ -459,12 +463,125 @@ h3 {
     content: "";
     display: block;
     height: 30px;
-    margin: 30px auto;
+    margin: 30px auto 40px;
     width: 30px; }
 
 iframe {
   border: 1px solid #6581A6;
   max-width: calc(400px + 4em);
   height: 400px; }
+
+.contactDiv {
+  background: #141416;
+  box-shadow: 0 0 10px rgba(10, 10, 10, 0.4);
+  font-family: "Rozha One", sans-serif;
+  max-width: 100%;
+  min-width: 400px;
+  padding: 2.618em;
+  position: relative;
+  transition: .6s; }
+  .contactDiv form {
+    text-align: center; }
+    .contactDiv form h1 {
+      color: #F2F2F2;
+      padding-bottom: .382em;
+      text-transform: lowercase; }
+    .contactDiv form p {
+      color: #F2F2F2;
+      font-size: .8em;
+      padding-bottom: 1em;
+      text-transform: lowercase; }
+    .contactDiv form #contactBack {
+      cursor: pointer; }
+    .contactDiv form .inputDiv {
+      margin-bottom: 1.5em;
+      margin-top: 1em;
+      position: relative; }
+      .contactDiv form .inputDiv input {
+        background: none;
+        border: 0;
+        border-bottom: 2px solid #F2F2F2;
+        border-radius: 0;
+        color: #F2F2F2;
+        font-size: 1em;
+        outline: none;
+        position: relative;
+        transition: .3s;
+        text-transform: lowercase;
+        width: 100%;
+        z-index: 5; }
+        .contactDiv form .inputDiv input:focus {
+          border-bottom: 2px solid #6581A6;
+          outline: none; }
+      .contactDiv form .inputDiv .placeHolder {
+        font-size: 1em;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: .5s;
+        z-index: 1; }
+      .contactDiv form .inputDiv .valid {
+        color: #6581A6;
+        display: none;
+        font-size: .618em;
+        margin-top: -.5em;
+        position: absolute;
+        right: 0;
+        transition: .3s; }
+    .contactDiv form #taDiv {
+      position: relative;
+      width: 100%; }
+      .contactDiv form #taDiv .taPlaceHolder {
+        font-size: 1em;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: .5s;
+        z-index: 1; }
+      .contactDiv form #taDiv textarea {
+        background: none;
+        border: none;
+        color: #F2F2F2;
+        font-size: 1em;
+        height: 4.236em;
+        min-height: 120px;
+        outline: none;
+        position: relative;
+        resize: none;
+        width: 100%;
+        z-index: 5; }
+        @media only screen and (max-height: 576px) and (orientation: landscape) {
+          .contactDiv form #taDiv textarea {
+            height: 68px; } }
+    .contactDiv form input[type="submit"] {
+      appearance: none;
+      background: transparent;
+      border: 0;
+      border: 2px solid #F2F2F2;
+      border-radius: 20px;
+      bottom: 1.618em;
+      color: #F2F2F2;
+      cursor: pointer;
+      font-size: .8em;
+      -moz-appearance: none;
+      outline: none;
+      padding: .5em 1em;
+      position: absolute;
+      right: 1.618em;
+      text-transform: lowercase;
+      transition: .3s;
+      -webkit-appearance: none; }
+      .contactDiv form input[type="submit"]:hover {
+        background: #141416;
+        border: 2px solid transparent;
+        color: #F2F2F2; }
+
+.phFocus {
+  color: #6581A6 !important;
+  font-size: 0.618em !important;
+  top: -1.5em !important; }
+
+.validDisplay {
+  display: block !important; }
 
 /*# sourceMappingURL=style.css.map */

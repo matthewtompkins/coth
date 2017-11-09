@@ -33,7 +33,12 @@
   background-image: url("../img/sc.png");
 }
 
+.tracks {
+  background-image: url("../img/wood.jpg");
+}
+
 .music {
+  padding-bottom: 0;
   text-align: center;
 
     &::after {
@@ -42,7 +47,7 @@
       content: "";
       display: block;
       height: 30px;
-      margin: 30px auto;
+      margin: 30px auto 40px;
       width: 30px;
     }
 }
@@ -51,4 +56,149 @@ iframe {
   border: 1px solid $dkBlue;
   max-width: calc(400px + 4em);
   height: 400px;
+}
+
+.contactDiv {
+  background: $black;
+  box-shadow: 0 0 10px rgba(10,10,10,.4);
+  font-family: $header;
+  max-width: 100%;
+  min-width: 400px;
+  padding: 2.618em;
+  position: relative;
+  transition: .6s;
+
+  form {
+    text-align: center;
+
+      h1 {
+        color: $white;
+        padding-bottom: .382em;
+        text-transform: lowercase;
+      }
+
+      p {
+        color: $white;
+        font-size: .8em;
+        padding-bottom: 1em;
+        text-transform: lowercase;
+      }
+
+      #contactBack {
+        cursor: pointer;
+      }
+
+      .inputDiv {
+        margin-bottom: 1.5em;
+        margin-top: 1em;
+        position: relative;
+
+              input {
+                background: none;
+                border: 0;
+                border-bottom: 2px solid $white;
+                border-radius: 0;
+                color: $white;
+                font-size: 1em;
+                outline: none;
+                position: relative;
+                transition: .3s;
+                text-transform: lowercase;
+                width: 100%;
+                z-index: 5;
+
+                  &:focus {
+                    border-bottom: 2px solid $dkBlue;
+                    outline: none;
+                  }
+              }
+
+              .placeHolder {
+                font-size: 1em;
+                left: 0;
+                position: absolute;
+                top: 0;
+                transition: .5s;
+                z-index: 1;
+              }
+
+              .valid {
+                color: $dkBlue;
+                display: none;
+                font-size: .618em;
+                margin-top: -.5em;
+                position: absolute;
+                right: 0;
+                transition: .3s;
+              }
+            }
+
+    #taDiv {
+      position: relative;
+      width: 100%;
+
+        .taPlaceHolder {
+          font-size: 1em;
+          left: 0;
+          position: absolute;
+          top: 0;
+          transition: .5s;
+          z-index: 1;
+        }
+
+        textarea {
+          background: none;
+          border: none;
+          color: $white;
+          font-size: 1em;
+          height: 4.236em;
+          min-height: 120px;
+          outline: none;
+          position: relative;
+          resize: none;
+          width: 100%;
+          z-index: 5;
+
+            @include landscape {
+              height: 68px;
+            }
+        }
+    }
+
+    input[type="submit"] {
+      appearance: none;
+      background: transparent;
+      border: 0;
+      border: 2px solid $white;
+      border-radius: 20px;
+      bottom: 1.618em;
+      color: $white;
+      cursor: pointer;
+      font-size: .8em;
+      -moz-appearance: none;
+      outline: none;
+      padding: .5em 1em;
+      position: absolute;
+      right: 1.618em;
+      text-transform: lowercase;
+      transition: .3s;
+      -webkit-appearance: none;
+
+        &:hover {
+          background: $black;
+          border: 2px solid transparent;
+          color: $white;
+        }
+    }
+  }
+}
+
+.phFocus {
+  color: $dkBlue!important;
+  font-size: .618em!important;
+  top: -1.5em!important;
+}
+
+.validDisplay {
+  display: block!important;
 }

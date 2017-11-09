@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/jquery-3.2.1.min.js"></script>
 </head>
 <body class="fontHead fontWhite font4">
   <section class="hero">
@@ -23,11 +24,34 @@
       <p class="fontBody font5 fontBlack op5 fontLower">Detroit-based booze-hound sea shanties.</p>
     </div>
   </section>
-  <section class="tracks fullWidth bgLtBlue pad4 alignCenter">
-    <h3 class="music fontHead fontDkBlue fontLower">the music</h3>
-    <div class="scPlayer pad2 auto alignCenter">
+  <section class="tracks fullWidth alignCenter pad4">
+    <div class="scPlayer dInBlock bgLtBlue pad2 auto alignCenter">
+      <h3 class="pad2 music fontHead fontDkBlue fontLower">the music</h3>
       <iframe class="pad2" width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/359545598&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
     </div>
   </section>
+  <section class="contact dFlex flexCenter bgWhite fullWidth alignCenter pad4">
+    <div class="contactDiv">
+      <form action="https://formspree.io/info@rantouring.com" method="POST">
+        <h3 class="fontHead fontWhite">Contact Us</h3>
+        <div class="inputDiv">
+          <p class="placeHolder" id="phName">Name</p>
+          <input type="name" name="name" id="nameInput">
+          <p class="valid" id="nameValid">Enter a valid name</p>
+        </div>
+        <div class="inputDiv" id="emailDiv">
+          <p class="placeHolder" id="phEmail">E-mail</p>
+          <input type="email" name="_replyto" id="emailInput">
+          <p class="valid" id="emailValid">Enter a valid email</p>
+        </div>
+        <div id="taDiv">
+          <p class="taPlaceHolder" id="phTA">Message</p>
+          <textarea type="message" name="message" id="taInput"></textarea>
+        </div>
+        <input type="submit" value="Send" id="submit">
+      </form>
+    </div>
+  </section>
+  <script src="./js/script.js"></script>
 </body>
 </html>
