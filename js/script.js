@@ -1,3 +1,8 @@
+//password protection
+
+var pwScreen = $("#pwScreen");
+var pwInput = $("#pwInput");
+var submitPW = $("#submitPW").on("click", checkPW);
 
 //email validators
 var emailValidation = '@';
@@ -48,3 +53,14 @@ var taInput = $("#taInput").on("focusin", function() {
     $("#phTA").removeClass("phFocus");
   }
 });
+
+function checkPW() {
+
+  if ( pwInput.val() === "coconutJazz" ) {
+
+    pwScreen.css("display", "none");
+  } else {
+
+    $("#wrongPW").css("opacity", "1");
+  }
+}

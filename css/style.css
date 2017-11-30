@@ -501,6 +501,30 @@ h3 {
     .scPlayer {
       margin: 0; } }
 
+#pwScreen {
+  flex-direction: column;
+  height: 100%; }
+
+#pwInput {
+  width: 100%; }
+
+#submitPW {
+  border: 1px solid #141416; }
+  #submitPW:hover {
+    background: #141416;
+    border: 1px solid #141416;
+    color: #F2F2F2;
+    cursor: pointer; }
+
+#wrongPW {
+  color: #B2210E;
+  font-size: .618em; }
+
+.keyIcon {
+  background-image: url("../img/key.png");
+  height: 40px;
+  width: 40px; }
+
 iframe {
   border: 1px solid #6581A6;
   height: 400px;

@@ -99,6 +99,37 @@
     }
 }
 
+#pwScreen {
+  flex-direction: column;
+  height: 100%;
+}
+
+#pwInput {
+  width: 100%;
+}
+
+#submitPW {
+  border: 1px solid $black;
+
+    &:hover {
+      background: $black;
+      border: 1px solid $black;
+      color: $white;
+      cursor: pointer;
+    }
+}
+
+#wrongPW {
+  color: #B2210E;
+  font-size: .618em;
+}
+
+.keyIcon {
+  background-image: url("../img/key.png");
+  height: 40px;
+  width: 40px;
+}
+
 iframe {
   border: 1px solid $dkBlue;
   height: 400px;
