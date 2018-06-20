@@ -1,0 +1,425 @@
+
+@import 'reset.scss';
+@import 'responsive.scss';
+@import 'mixinVariable.scss';
+@import 'framework.scss';
+
+html {
+  background-color: $white;
+  font-size: 1em;
+
+    @include responsive(small-screen) {
+      font-size: .8em;
+    }
+}
+
+main {
+  margin: auto;
+  max-width: 1600px;
+}
+
+/*------------------------
+--------HERO&NAV----------
+------------------------*/
+
+
+#hero {
+  background-image: url("../img/main.jpg");
+  background-position: top center;
+  min-height: 300px;
+  width: 66.66%;
+
+    @include responsive(small-screen) {
+      width: 100%;
+    }
+}
+
+.absNav {
+  bottom: 0;
+  left: 50%;
+  margin-left: calc(-66.67% / 2);
+  position: absolute;
+
+    @include responsive(small-screen) {
+      margin-left: calc(-100% / 2);
+    }
+}
+
+.fixNav {
+  left: 50%;
+  margin-left: calc(-66.67% / 2);
+  position: fixed;
+  top: 0;
+
+    @include responsive(small-screen) {
+      margin-left: calc(-100% / 2);
+    }
+}
+
+.title {
+  margin-bottom: -1em;
+
+    @include responsive(small-screen) {
+      min-height: 400px;
+      padding: 1em;
+    }
+}
+
+.navOption {
+  margin-right: 2.618em;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      vertical-align: middle;
+
+        &:hover {
+          color: $tertiary;
+        }
+    }
+
+    @media screen and (max-width: 932px) {
+      margin-right: 1.618em;
+
+        a {
+
+            &:hover {
+              color: $white;
+            }
+        }
+    }
+
+    @media screen and (max-width: 810px) {
+
+        &:nth-child(3) {
+          margin-right: 0;
+        }
+
+        &:last-child {
+          display: block;
+          margin-top: 1em;
+        }
+    }
+}
+
+.socOption {
+  margin-right: 1em;
+
+    &:last-child {
+      margin-right: 0;
+    }
+}
+
+.socOption i {
+  color: white;
+
+    &:hover {
+      color: $tertiary;
+    }
+}
+
+.coord {
+  font-weight: bold;
+  width: 16.67%;
+
+    @include responsive(small-screen) {
+      display: none;
+    }
+}
+
+#chimpDiv {
+  margin: 0 auto 1em auto;
+  width: 66.67%;
+
+    form {
+      padding: 0;
+    }
+}
+
+.chimpIn {
+  -webkit-appearance: none;
+  background: rgba(10,10,10,.1);
+  border: none;
+  box-shadow: none;
+  outline: none;
+
+    &:focus {
+      border: none;
+      box-shadow: none;
+      outline: none;
+    }
+}
+
+.subDiv {
+  padding: 0 2em 2em 2em;
+}
+
+.chimpSub {
+  -webkit-appearance: none;
+  background: $primary;
+  border: none;
+  color: white;
+  font-family: $body;
+  outline: none;
+  padding: 1em;
+  width: 100%;
+
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+}
+
+/*------------------------
+--------CONTENT----------
+------------------------*/
+
+
+.cont {
+  width: 66.67%;
+
+    @include responsive(small-screen) {
+      width: 100%;
+    }
+}
+
+.contBio {
+  background: white;
+  margin-bottom: 1em;
+
+    ::first-letter {
+      font-family: "Ostrich Sans Bold";
+      font-size: 4.326em;
+    }
+}
+
+.scDiv {
+  background: white;
+  margin-bottom: 1em;
+
+    @include responsive(small-screen) {
+      flex-direction: column;
+    }
+}
+
+iframe {
+
+    @include responsive(small-screen) {
+      order: 2;
+      width: 100%;
+    }
+}
+
+.scInfo {
+  height: 300px;
+  width: 50%;
+
+    a {
+
+       &:hover {
+         color: $white;
+       }
+    }
+
+    @include responsive(small-screen) {
+      order: 1;
+      width: 100%;
+
+        a {
+
+            &:hover {
+              color: $tertiary;
+            }
+        }
+    }
+}
+
+.musicLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+
+    i {
+      font-size: 4.326em;
+    }
+}
+
+/*------------------------
+-------CONTACT------------
+------------------------*/
+
+#contact {
+  height: 100%;
+  z-index: -1;
+}
+
+#opContact {
+  cursor: pointer;
+
+    &:hover {
+      color: $tertiary;
+    }
+
+    @include responsive(small-screen) {
+
+        &:hover {
+          color: $white;
+        }
+    }
+}
+
+#contactLeft {
+  background-image: url("../img/contact.jpg");
+  height: 100%;
+  left: -100%;
+  width: 66.67%;
+
+    @include responsive(small-screen) {
+      background: none;
+      bottom: 0;
+      height: 100vh;
+      overflow: scroll;
+      position: absolute;
+      width: 100%;
+      z-index: 80;
+
+        .conInfo {
+          background-color: rgba(10,10,10,.2);
+          margin: 0;
+        }
+    }
+}
+
+.email {
+
+    @include responsive(small-screen) {
+      bottom: 0;
+      top: auto;
+    }
+}
+
+.conSoc {
+
+   .icon {
+     height: 30px;
+     width: 30px;
+   }
+}
+
+#contactRight {
+  height: 100%;
+  right: -100%;
+  width: 33.33%;
+
+    @include responsive(small-screen) {
+      height: 100vh;
+      overflow: scroll;
+      width: 100%;
+    }
+}
+
+#close {
+  background-image: url("../img/close.png");
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+
+    &:hover {
+      animation: spin 1s;
+      animation-fill-mode: forwards;
+    }
+
+    @include responsive(small-screen) {
+      opacity: 1;
+      z-index: 9999;
+
+        &:hover {
+          animation: none;
+        }
+    }
+}
+
+@keyframes spin {
+  0%{transform: rotate(0deg);}
+  30%{transform: rotate(-45deg);}
+  70%{transform: rotate(405deg);}
+  100%{transform: rotate(360deg);}
+}
+
+.waves {
+  background-image: url("../img/wave.png");
+  background-size: 91px;
+  bottom: 1em;
+  height: 80px;
+  left: 0;
+  width: 100%;
+}
+
+/*------------------------
+-------FOOTER-------------
+------------------------*/
+
+.twitterDiv {
+  margin-bottom: .5em;
+  width: 50%;
+
+    @include responsive(small-screen) {
+      width: 90%;
+    }
+}
+
+#instafeed img {
+  height: 25%;
+  vertical-align: middle;
+  width: 25%;
+}
+
+/*------------------------
+-------BUBBLES------------
+------------------------*/
+
+.bubble {
+  animation: moveBubble;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 100%;
+  box-shadow: 0 0 2px rgba(10,10,10,.1);
+  opacity: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+@keyframes moveBubble {
+  0% {
+    bottom: 0;
+    opacity: 0;
+    transform: translateX(0);
+  }
+  25% {
+    bottom: 25%;
+    opacity: .5;
+    transform: translateX(20px);
+  }
+  50% {
+    bottom: 50%;
+    opacity: .3;
+    transform: translateX(0px);
+  }
+  75% {
+    bottom: 75%;
+    opacity: .5;
+    transform: translateX(-20px);
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0;
+    transform: translateX(0);
+  }
+}

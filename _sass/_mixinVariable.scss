@@ -1,0 +1,22 @@
+
+// FONTS
+
+@font-face {
+  font-family: "Ostrich Sans Bold";
+  src: url("../fonts/ostrich-sans-bold.woff");
+}
+
+@font-face {
+  font-family: "Ostrich Sans Regular";
+  src: url("../fonts/ostrich-sans-regular.woff");
+}
+
+$header: 'Ostrich Sans Bold', Georgia, sans-serif;
+$headLt: 'Ostrich Sans Regular', Georgia, sans-serif;
+$body: Futura, sans-serif;
+
+$black: #1E1D21;
+$white: #FCFCFC;
+$primary: #1A66A1;
+$secondary: #A9E8DC;
+$tertiary: #F5EEA2;
