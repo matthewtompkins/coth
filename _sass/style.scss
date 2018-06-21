@@ -237,10 +237,14 @@ iframe {
 }
 
 .musicLinks {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
+
+    .linkItem {
+      margin-right: 1em;
+
+        &:last-child {
+          margin-right: 0;
+        }
+    }
 
     i {
       font-size: 4.326em;
